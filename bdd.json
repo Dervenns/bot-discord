@@ -1,0 +1,30 @@
+{
+    "stats": [
+        "1",
+        "2",
+        "3",
+        "soleil"
+    ],
+    "warn": {},
+    "coins-utilisateurs": {},
+    "level-utilisateurs": {},
+    "message-bienvenue": "Bienvenue a toi sur Barodezia !",
+    "statut-level": true,
+    "699308964575314041": {
+        "prefix": "*",
+        "test": "test"
+    },
+    "channel-events": "",
+    "participants-event-1k": [],
+    "message-event-1k": "",
+    "captcha": {
+        "678573092842504194": {
+            "value": 7941,
+            "statut": false
+        },
+        "1013005300195930152": {
+            "value": 7988,
+            "statut": true
+        }
+    }
+}
