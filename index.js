@@ -10,6 +10,8 @@ const Client = new Discord.Client({
     ]
 });
 
+var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+
 const prefix = "*";
 
 Client.on("ready", () => {
