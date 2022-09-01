@@ -12,8 +12,6 @@ const Client = new Discord.Client({
 
 const prefix = "*";
 
-var  port_serveur  =  processus . env . VOTRE_PORT  ||  processus . env . PORT  ||  80 ;
-
 Client.on("ready", () => {
     console.log("bot oprérationnel");
 });
