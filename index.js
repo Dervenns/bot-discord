@@ -10,15 +10,15 @@ const Client = new Discord.Client({
     ]
 });
 
-var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
-
 const prefix = "*";
+
+var  port_serveur  =  processus . env . VOTRE_PORT  ||  processus . env . PORT  ||  80 ;
 
 Client.on("ready", () => {
     console.log("bot oprérationnel");
 });
 
-Client.login("MTAxMTk0Nzc5ODIzNDY4MTM3NA.GsMYJ3.G87d9zFMXNraNsbiya6NesWKQmUZdo0bI5YR9c");
+Client.login(process.env.TOKEN);
 
 function Savebdd() {
     fs.writeFile("./bdd.json", JSON.stringify(bdd, null, 4), (err) => {
@@ -83,7 +83,6 @@ Client.on('message', async message => {
                     bdd["captcha"][message.member.id]["statut"] = true;
                     Savebdd();
                     message.member.roles.remove('1012999986662875136');
-                    Client.channels.cache.get("1013000861598883899").bulkDelete(3)
                     console.log("Un membre à complété avec succès le captcha !");
                 }
                 else{
